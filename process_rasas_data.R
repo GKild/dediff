@@ -85,10 +85,8 @@ just_small_cells=rownames(colon_seurat@meta.data)[which(!colon_seurat@meta.data$
 
 li_seurat=subset(colon_seurat, cells=just_large_cells)
 si_seurat=subset(colon_seurat, cells=just_small_cells)
-
-saveRDS(li_seurat, "large_intestine_rasa.rds")
-
 li_seurat@meta.data$exp_annot[which(li_seurat@meta.data$exp_annot=="adult_BEST1 enterocyte")]="adult_Enterocyte"
+saveRDS(li_seurat, "large_intestine_rasa.rds")
 
 si_seurat@meta.data$exp_annot[which(si_seurat@meta.data$exp_annot=="adult_BEST1 enterocyte")]="adult_Enterocyte"
 

@@ -35,4 +35,4 @@ avg_exp=AverageExpression(ref_srat, use.scale = T)
 
 cordat=cor(avg_exp$RNA)
 
-Heatmap(cordat, )
+Heatmap(cordat)
