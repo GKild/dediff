@@ -60,7 +60,7 @@ srat_comb_nocc@meta.data$new_ident[grep("DC", srat_comb_nocc@meta.data$new_ident
 
 # only epithelial data for Rasa's large intestine fetal data
 
-li_seurat=readRDS('large_intestine_rasa.rds')
+li_seurat=readRDS('rasa_stuff/large_intestine_rasa.rds')
 li_seurat_fetal=subset(li_seurat, Age%in%c("F78", "F66", "F67", "F72", "F73"))
 lif_nocc_seurat=subset(li_seurat_fetal, Phase=="G1")
 
